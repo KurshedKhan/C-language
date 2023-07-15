@@ -15,8 +15,9 @@
 		Note: if we don't give the declaration of these function in the global 
   			decleration then compiler will give you an error of undeclaration.
 			
-		1. void komal(): 
-		2. void saloni(): 
+		1. void kurshed(): 
+		2. void sanu(): 
+  
 		statement : it is code continuous of single line and
 					multiple line terminated by semicolon ";".
 					; => it tells the compiler that our statement
