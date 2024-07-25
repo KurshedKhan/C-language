@@ -4,7 +4,8 @@ int main(){
 
     int num = 10;
 
-    int *num_ptr = &num;
+    int *num_ptr;
+    num_ptr = &num;
 
     char ch = 'a';
 
