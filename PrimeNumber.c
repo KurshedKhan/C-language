@@ -12,10 +12,10 @@ void CheckPrime(int number){
     }
     else if(number >=2){
 
-        for(int i = 2; i < number ; i++){
+        for(int i = 2; i <= number ; i++){
 
             if(number % i == 0){
-                isPrime = 0;
+                isPrime == 0;
                 break;
             }
 
