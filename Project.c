@@ -3,11 +3,11 @@
 #include <string.h>
 
 // Struct definition
- struct Student {
+ typedef struct{
     int id;
     char name[50];
     int age;
-};
+}Student;
 
 // Function prototypes// declaration
 void createStudent();
