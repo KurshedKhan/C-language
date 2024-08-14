@@ -161,7 +161,7 @@ void menu() {
                 break;
             case 3:
                 updateStudent();
-                break;
+                break; 
             case 4:
                 deleteStudent();
                 break;
