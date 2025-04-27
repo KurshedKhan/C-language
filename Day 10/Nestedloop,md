@@ -1,0 +1,103 @@
+# C Language Notes: Nested `for` Loops
+
+---
+
+## 1. What is a Nested `for` Loop?
+- A `for` loop inside another `for` loop.
+- Useful for working with **grids**, **patterns**, **matrices**, etc.
+
+## 2. Basic Syntax
+```c
+for (initialization; condition; increment) {
+    for (initialization; condition; increment) {
+        // inner loop statements
+    }
+    // outer loop statements
+}
+```
+
+## 3. Example: Printing a 3x3 grid of numbers
+```c
+for (int i = 1; i <= 3; i++) {
+    for (int j = 1; j <= 3; j++) {
+        printf("%d ", j);
+    }
+    printf("\n");
+}
+```
+**Output:**
+```
+1 2 3
+1 2 3
+1 2 3
+```
+
+## 4. Example: Printing a pattern of stars
+```c
+for (int i = 1; i <= 4; i++) {
+    for (int j = 1; j <= i; j++) {
+        printf("* ");
+    }
+    printf("\n");
+}
+```
+**Output:**
+```
+*
+* *
+* * *
+* * * *
+```
+
+## 5. How many times does the inner loop run?
+- **Total runs = outer loop count x inner loop count**
+
+Example:
+```c
+for (int i = 1; i <= 2; i++) {
+    for (int j = 1; j <= 3; j++) {
+        printf("%d %d\n", i, j);
+    }
+}
+```
+**Runs:** `2 x 3 = 6` times.
+
+## 6. Example: Multiplication Table (1 to 5)
+```c
+for (int i = 1; i <= 5; i++) {
+    for (int j = 1; j <= 10; j++) {
+        printf("%d x %d = %d\n", i, j, i * j);
+    }
+    printf("\n");
+}
+```
+
+## 7. Important Points
+- Inner loop must complete **all cycles** for each **one cycle** of outer loop.
+- You can control inner and outer loops **separately**.
+- Be careful with **initialization** and **increment** to avoid infinite loops.
+
+## 8. Pattern Example: Inverted triangle
+```c
+for (int i = 5; i >= 1; i--) {
+    for (int j = 1; j <= i; j++) {
+        printf("* ");
+    }
+    printf("\n");
+}
+```
+**Output:**
+```
+* * * * *
+* * * *
+* * *
+* *
+*
+```
+
+---
+
+> **Tip:** First understand the outer loop, then handle the inner loop step-by-step.
+
+---
+
