@@ -6,6 +6,7 @@
 - A `for` loop inside another `for` loop.
 - Useful for working with **grids**, **patterns**, **matrices**, etc.
 
+
 ## 2. Basic Syntax
 ```c
 for (initialization; condition; increment) {
