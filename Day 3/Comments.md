@@ -63,7 +63,7 @@ int main() {
 
     /*
      Print the variable value
-     to the console
+     to the Terminal/Output
     */
     printf("%d", num);
 
