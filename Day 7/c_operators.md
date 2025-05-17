@@ -40,7 +40,7 @@ C operators are symbols that perform operations on variables and values.
 
 ---
 
-## 🔹 4. Bitwise Operators
+## 🔹 4. Bitwise Operators Not for beginners
 
 | Operator | Description       | Example      |
 |----------|-------------------|--------------|
