@@ -1,22 +1,28 @@
 #include <stdio.h>
 
-void addition(int a , int b); // function declaration // function prototype
+int add(int a , int b); // function prototype
+int sub(int a , float b);
 
 int main(){
 
-  addition(20,50); // function calling part
+  int result = add(10,20); // calling part of function
+  printf("Calling function with return keyword : %d\n",result);
+  sub(20,30.5);
 
   return 0;
-
 }
 
 // function defination
-void addition(int a , int b){
+int add(int a , int b){
 
-  int total;
+  int total = a + b;
 
-  total = a + b;
+  return total;
 
-  printf("%d",total);
+}
 
+int sub(int a , float b){
+
+  float sub1 = b - a;
+  printf("%f\n",sub1);
 }
